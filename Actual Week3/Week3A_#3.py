@@ -47,6 +47,8 @@ while True:
         except ValueError:
             ini_list.appendleft(int(value[2]))
 
+
+#Warning: It's better to take care of equal values in the list before turning into b_tree
 for i in ini_list:
     ini_root = add_node(ini_root, i)
 
